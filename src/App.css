@@ -1,0 +1,7 @@
+/* Only basic resets - most styling is handled through Tailwind */
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
