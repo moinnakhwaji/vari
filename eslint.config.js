@@ -18,11 +18,21 @@ export default tseslint.config(
       'react-refresh': reactRefresh,
     },
     rules: {
-      ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
+  ...reactHooks.configs.recommended.rules,
+  'react-refresh/only-export-components': [
+    'warn',
+    { allowConstantExport: true },
+  ],
+
+  // Disable unused function parameter warnings
+  'no-unused-vars': [
+    'warn',
+    {
+      args: 'none', // ← disables warnings for unused function parameters
+      vars: 'all',
+      ignoreRestSiblings: true,
     },
+  ],
+},
   }
 );
