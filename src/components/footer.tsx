@@ -1,4 +1,4 @@
-import { Leaf, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { Leaf, Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
@@ -46,11 +46,11 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-green-500" />
-                <span className="text-gray-300 text-sm">contact@utkarshwari.org</span>
+                <span className="text-gray-300 text-sm">info@utkarshglobalfoundation.org</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-4 w-4 mr-2 mt-1 text-green-500" />
-                <span className="text-gray-300 text-sm">Pandharpur, Maharashtra, India</span>
+                <span className="text-gray-300 text-sm">Bhandup(w), Maharashtra, India</span>
               </li>
             </ul>
           </div>
@@ -63,16 +63,14 @@ export function Footer() {
               Donate Now
             </Button>
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="text-gray-300 hover:text-green-500">
+              <a href="https://www.facebook.com/Utkarsh8910/" className="text-gray-300 hover:text-green-500">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-green-500">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-green-500">
+            
+              <a href="https://www.instagram.com/ugf.in/?hl=en" className="text-gray-300 hover:text-green-500">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-green-500">
+              <a href="https://www.youtube.com/@utkarsh.global.foundation" className="text-gray-300 hover:text-green-500">
                 <Youtube className="h-5 w-5" />
               </a>
             </div>

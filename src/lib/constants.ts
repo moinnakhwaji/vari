@@ -11,6 +11,7 @@ import image8 from '../assets/8.jpg';
 import image9 from '../assets/9.jpg';
 import image10 from '../assets/10.jpg';
 import image11 from '../assets/11.jpg';
+import image15 from '../assets/15.jpg';
 
 export const navLinks = [
   { href: "#home", label: "Home" },
@@ -67,37 +68,37 @@ export const galleryImages = [
     id: 1,
     src: image8,
     alt: "Wari Procession",
-    caption: "Annual Wari Procession",
+    caption: "Devotees marching with saffron flags during the wari yatra ",
   },
   {
     id: 2,
-    src: image9,
+    src: image15,
     alt: "Tree Planting",
-    caption: "Community Tree Planting",
+    caption: "pligrims standing in queue , showcasing unity and discipline ",
   },
   {
     id: 3,
     src: image9,
     alt: "Plastic Cleanup",
-    caption: "River Cleanup Drive",
+    caption: "Aerial view of rangoli promoting environmental awareness.",
   },
   {
     id: 4,
     src: image10,
     alt: "Awareness Workshop",
-    caption: "Environmental Awareness Workshop",
+    caption: "warkaris walking together with devotion and purpose ",
   },
   {
     id: 5,
     src: image11,
     alt: "Team Meeting",
-    caption: "Volunteer Coordination Meeting",
+    caption: "participants in traditional attire celebrating culture ",
   },
   {
     id: 6,
     src: image5,
     alt: "Educational Session",
-    caption: "Educational Outreach Program",
+    caption: "spritual kritan spreading messages of devotion and peace ",
   },
 ];
 

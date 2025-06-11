@@ -38,7 +38,7 @@ export function GallerySection() {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="object-cover w-full h-full transform transition-transform duration-300 group-hover:scale-110"
+                  className="object-cover w-full h-80 transform transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-end">
@@ -50,11 +50,11 @@ export function GallerySection() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
             View Full Gallery
           </Button>
-        </div>
+        </div> */}
 
         {/* Lightbox */}
         {selectedImage !== null && (
