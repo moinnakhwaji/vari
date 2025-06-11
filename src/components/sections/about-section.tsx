@@ -70,9 +70,9 @@ export function AboutSection() {
       icon: Globe,
       title: "Campaign Goals",
       color: "blue",
-      gradient: "from-blue-400 to-cyan-500",
-      bgColor: "bg-blue-100 dark:bg-blue-900",
-      borderColor: "border-t-blue-600",
+      gradient: "from-orange-400 to-cyan-500",
+      bgColor: "bg-orange-100 dark:bg-orange-900",
+      borderColor: "border-t-orange-400",
       textColor: "text-blue-600",
       content: "Our campaign focuses on promoting plastic-free pilgrimage routes, tree plantation, water conservation, and sustainable practices. Through the Wari, we reach thousands of pilgrims and local communities, spreading awareness about critical environmental issues."
     },
@@ -82,7 +82,7 @@ export function AboutSection() {
       color: "purple",
       gradient: "from-purple-400 to-indigo-500",
       bgColor: "bg-purple-100 dark:bg-purple-900",
-      borderColor: "border-t-purple-600",
+      borderColor: "border-t-orange-300",
       textColor: "text-purple-600",
       content: "We engage with local communities, pilgrims, and volunteers to create a network of environmental advocates. Our collaborative approach ensures sustainable change that extends beyond the pilgrimage period."
     }
@@ -107,9 +107,10 @@ export function AboutSection() {
           <div className={`transform transition-all duration-1000 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
           }`}>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
-              About Utkarsh Environment Wari
-            </h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-yellow-600 via-green-700 to-orange-600 bg-clip-text text-transparent">
+  About Utkarsh Environment Wari
+</h2>
+
             <p className="text-gray-600 dark:text-gray-300 max-w-4xl mx-auto text-lg md:text-xl leading-relaxed">
               A collaborative effort to promote environmental awareness during the traditional Pandharpur Wari pilgrimage.
             </p>
