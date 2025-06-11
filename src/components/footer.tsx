@@ -42,7 +42,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Phone className="h-4 w-4 mr-2 text-green-500" />
-                <span className="text-gray-300 text-sm">+91 98765 43210</span>
+                <span className="text-gray-300 text-sm">+91  86559 69555</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-green-500" />
@@ -50,7 +50,7 @@ export function Footer() {
               </li>
               <li className="flex items-start">
                 <MapPin className="h-4 w-4 mr-2 mt-1 text-green-500" />
-                <span className="text-gray-300 text-sm">Bhandup(w), Maharashtra, India</span>
+                <span className="text-gray-300 text-sm">Corporate Office no 402-407 4th floor Vasudev Chambers near Sonapur Signal Opposite Dmart Mulund West Mumbai-400078</span>
               </li>
             </ul>
           </div>
