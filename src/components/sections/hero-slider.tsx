@@ -24,7 +24,7 @@ export function HeroSlider() {
     setTimeout(() => setIsTransitioning(false), 500);
   };
 
-  const goToSlide = (index) => {
+  const goToSlide = (index:any) => {
     if (isTransitioning || index === currentSlide) return;
     setIsTransitioning(true);
     setCurrentSlide(index);
