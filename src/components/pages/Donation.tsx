@@ -1,22 +1,37 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import qrcode from "../../assets/qrcode.jpg";
+import video from "../../assets/video.mp4"
 
 export function Donation() {
   return (
-    <section id="donation" className="py-16 px-4 bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
-      <div className="max-w-4xl mx-auto">
+    <section id="donation" className="relative py-16 px-4 min-h-screen overflow-hidden">
+      {/* Background Video */}
+      <video 
+        src={video} 
+        autoPlay 
+        loop 
+        muted 
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      />
+      
+      {/* Overlay for better text readability */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black/30 z-10"></div>
+      
+      {/* Content */}
+      <div className="relative z-20 max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
             Support Our Cause
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 max-w-2xl mx-auto drop-shadow-md">
             Your donation helps us make a positive impact in the community through Utkarsh Global Foundation
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* QR Code Card */}
-          <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
+          <Card className="shadow-xl border-0 bg-white/90 backdrop-blur-md">
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-2xl text-gray-800">
                 Scan to Donate
@@ -31,7 +46,7 @@ export function Donation() {
           </Card>
 
           {/* Bank Details Card */}
-          <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
+          <Card className="shadow-xl border-0 bg-white/90 backdrop-blur-md">
             <CardHeader>
               <CardTitle className="text-2xl text-gray-800 flex items-center gap-2">
                 <span className="text-3xl">🏦</span>
@@ -92,7 +107,7 @@ export function Donation() {
 
         {/* Thank You Section */}
         <div className="text-center mt-12">
-          <Card className="bg-gradient-to-r from-green-400 to-blue-500 text-white border-0 shadow-xl">
+          <Card className="bg-gradient-to-r from-green-400 to-blue-500 text-white border-0 shadow-xl bg-opacity-90 backdrop-blur-sm">
             <CardContent className="py-8">
               <h3 className="text-2xl font-bold mb-4">🙏 Thank You for Your Support</h3>
               <p className="text-lg opacity-90">
