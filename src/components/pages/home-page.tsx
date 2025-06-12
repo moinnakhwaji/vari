@@ -5,6 +5,7 @@ import { GallerySection } from "@/components/sections/gallery-section";
 import { VolunteerSection } from "@/components/sections/volunteer-section";
 import { StatsSection } from "@/components/sections/stats-section";
 import { Aboutwari } from "../sections/about-dindi";
+import { Donation } from "./Donation";
 
 export default function HomePage() {
   return (
@@ -15,7 +16,9 @@ export default function HomePage() {
       <StatsSection />
       <EventsSection />
       <GallerySection />
+         <Donation />
       <VolunteerSection />
+    
     </>
   );
 }

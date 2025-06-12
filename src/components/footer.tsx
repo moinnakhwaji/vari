@@ -59,9 +59,12 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Support Our Cause</h3>
             <p className="text-gray-300 text-sm">Your contribution helps us spread environmental awareness during the Wari pilgrimage.</p>
-            <Button className="w-full bg-green-600 hover:bg-green-700">
-              Donate Now
-            </Button>
+           <a href="#donation">
+  <Button className="w-full bg-green-600 hover:bg-green-700">
+    Donate Now
+  </Button>
+</a>
+
             <div className="flex space-x-4 pt-2">
               <a href="https://www.facebook.com/Utkarsh8910/" className="text-gray-300 hover:text-green-500">
                 <Facebook className="h-5 w-5" />

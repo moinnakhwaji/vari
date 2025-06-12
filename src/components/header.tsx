@@ -54,9 +54,11 @@ export function Header() {
 
           {/* Right Logo/Donate Button */}
           <div className="hidden md:flex items-center">
+              <a href="#donation">
             <Button variant="default" className="bg-green-600 hover:bg-green-700">
               Donate Now
             </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -92,12 +94,14 @@ export function Header() {
               </a>
             ))}
             <div className="pt-2">
+                <a href="#donation">
               <Button
                 variant="default"
                 className="w-full bg-green-600 hover:bg-green-700"
               >
                 Donate Now
               </Button>
+              </a>
             </div>
           </div>
         </div>

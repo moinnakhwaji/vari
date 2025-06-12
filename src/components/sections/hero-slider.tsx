@@ -52,10 +52,10 @@ export function HeroSlider() {
           <div className="" />
           
           <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black mb-4 animate-fadeIn">
+            <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-orange-600 mb-4 animate-fadeIn">
               {slide.title}
             </h1>
-            <p className="text-lg md:text-xl text-white max-w-3xl animate-fadeIn animation-delay-100">
+            <p className="text-lg md:text-xl text-black z-90 max-w-3xl animate-fadeIn animation-delay-100">
               {slide.subtitle}
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fadeIn animation-delay-200">

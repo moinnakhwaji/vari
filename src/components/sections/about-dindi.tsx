@@ -200,7 +200,7 @@ export function Aboutwari() {
                     <div className="text-sm text-gray-600 dark:text-gray-400">Towns & Villages</div>
                   </div>
                   <div className="text-center col-span-2 md:col-span-1">
-                    <div className="text-2xl font-bold text-amber-600 dark:text-amber-400">1000+</div>
+                    <div className="text-2xl font-bold text-amber-600 dark:text-amber-400">10000+</div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">Participants</div>
                   </div>
                 </div>

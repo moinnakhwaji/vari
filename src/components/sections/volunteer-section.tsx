@@ -52,9 +52,11 @@ export function VolunteerSection() {
               </ul>
             </CardContent>
             <CardFooter className="pt-6">
+                <a href="#donation" className="w-full">
               <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 transition-all hover:shadow-lg">
                 Donate Now
               </Button>
+              </a>
             </CardFooter>
           </Card>
 
@@ -87,9 +89,11 @@ export function VolunteerSection() {
               </ul>
             </CardContent>
             <CardFooter className="pt-6">
+              <a className="w-full" href="https://docs.google.com/forms/d/e/1FAIpQLSeS5b0Rzm0HviW2xJmBZIlLJIaczP7i2TrzYnuq_h8Lc5NDdA/viewform?usp=sharing&ouid=112549842481522030881">
               <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 transition-all hover:shadow-lg">
                 Register as Volunteer
               </Button>
+              </a>
             </CardFooter>
           </Card>
 
@@ -122,9 +126,11 @@ export function VolunteerSection() {
               </ul>
             </CardContent>
             <CardFooter className="pt-6">
+              <a href="https://www.instagram.com/ugf.in/?hl=en" className="text-gray-300 hover:text-green-500 w-full">
               <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 transition-all hover:shadow-lg">
                 Share Campaign
               </Button>
+              </a>
             </CardFooter>
           </Card>
         </div>
