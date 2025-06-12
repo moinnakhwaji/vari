@@ -12,6 +12,7 @@ import image9 from '../assets/9.jpg';
 import image10 from '../assets/10.jpg';
 import image11 from '../assets/11.jpg';
 import image15 from '../assets/15.jpg';
+import imagehero from "../assets/imagefront.jpg"
 
 export const navLinks = [
   { href: "#home", label: "Home" },
@@ -25,7 +26,7 @@ export const navLinks = [
 export const heroSlides = [
   {
     id: 1,
-    image:logo2,
+    image:imagehero,
     title: "Presenting ! Utkarsh Environment Wari 2025",
     subtitle: "Together, Let us Make a Difference!",
   },

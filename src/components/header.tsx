@@ -36,7 +36,7 @@ export function Header() {
               alt={"logo"}
               className="w-12 h-12 rounded-full"
             />
-            <span className="ml-2 text-lg font-bold">Utkarsh Wari</span>
+            <span className="ml-2 text-lg font-bold">Utkarsh Environment Wari</span>
           </div>
 
           {/* Desktop Navigation */}

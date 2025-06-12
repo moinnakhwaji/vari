@@ -10,7 +10,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center">
               <Leaf className="h-6 w-6 text-green-500" />
-              <span className="ml-2 text-xl font-bold">Utkarsh Wari</span>
+              <span className="ml-2 text-xl font-bold">Utkarsh Environment Wari</span>
             </div>
             <p className="text-gray-300 text-sm">
               Supporting environmental awareness through the traditional Pandharpur Wari pilgrimage. Join us in making a difference for our planet.
