@@ -1,6 +1,7 @@
 import { Leaf, Globe, Users, TreePine, Droplets, Recycle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState, useEffect, useRef } from 'react';
+import WariCard from "../Cards";
 
 export function AboutSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -172,7 +173,9 @@ export function AboutSection() {
           })}
         </div>
 
-        {/* Impact Section */}
+        <WariCard/>
+        
+   {/* Impact Section */}
         <div 
           ref={impactRef}
           className={`bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden transform transition-all duration-1000 ${
@@ -240,6 +243,8 @@ export function AboutSection() {
             </div>
           </div>
         </div>
+
+        
       </div>
     </section>
   );
