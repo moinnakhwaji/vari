@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import qrcode from "../../assets/qrcode.jpg";
+import qrcode from "../../assets/qr.png";
 import video from "../../assets/video.mp4"
 
 export function Donation() {

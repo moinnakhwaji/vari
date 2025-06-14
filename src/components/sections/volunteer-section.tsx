@@ -135,6 +135,9 @@ export function VolunteerSection() {
           </Card>
         </div>
 
+
+
+<section id="contact">
         <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-xl overflow-hidden border border-green-100 dark:border-gray-600">
           <div className="p-8 md:p-12">
             <div className="text-center mb-10">
@@ -166,7 +169,7 @@ export function VolunteerSection() {
             </div>
           </div>
         </div>
-
+</section>
         <div className="mt-12 text-center">
           <p className="text-muted-foreground text-lg">
             <span className="font-semibold text-green-600">Join the movement.</span> Every action counts in our journey towards a sustainable future.
