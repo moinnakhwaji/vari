@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { navLinks } from "@/lib/constants";
-import logo from "../assets/logo.png"
+import logo from "../assets/logo6.png"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,13 +28,13 @@ export function Header() {
       )}
     >
       <div className="container mx-auto px-4 text-black">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           {/* Left Logo */}
           <div className="flex items-center">
             <img
               src={logo}
               alt={"logo"}
-              className="w-12 h-12 rounded-full"
+              className="w-16 h-16 object-contain"
             />
             <span className="ml-2 text-lg font-bold">Utkarsh Environment Wari</span>
           </div>

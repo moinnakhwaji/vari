@@ -59,3 +59,6 @@ export function EventsSection() {
 
 
 
+
+
+"url('https://media-bom2-4.cdn.whatsapp.net/v/t61.24694-24/301448779_549554833814400_5032569754990504602_n.jpg?ccb=11-4&oh=01_Q5Aa1wGqlQQR8FOdqDeOcPxyzHL4ajMXtbNT769iD1Trj_cW6Q&oe=685A3D3B&_nc_sid=5e03e0&_nc_cat=100')" 

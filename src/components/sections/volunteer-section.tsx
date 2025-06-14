@@ -23,7 +23,7 @@ export function VolunteerSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <Card className="border-t-4 border-t-green-600 transition-all hover:shadow-xl hover:-translate-y-1 duration-300 bg-white dark:bg-gray-800">
+          <Card className="border-t-4 border-t-green-600 transition-all hover:shadow-xl hover:-translate-y-1 duration-300 bg-white dark:bg-gray-800 flex flex-col">
             <CardHeader className="pb-4">
               <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">💰</span>
@@ -31,7 +31,7 @@ export function VolunteerSection() {
               <CardTitle className="text-xl text-green-700 dark:text-green-400">Donate</CardTitle>
               <CardDescription className="text-base">Support our environmental initiatives and create lasting impact</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 flex-grow">
               <ul className="space-y-3">
                 <li className="flex items-start group">
                   <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 group-hover:scale-110 transition-transform" />
@@ -51,7 +51,7 @@ export function VolunteerSection() {
                 </li>
               </ul>
             </CardContent>
-            <CardFooter className="pt-6">
+            <CardFooter className="pt-6 mt-auto">
                 <a href="#donation" className="w-full">
               <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 transition-all hover:shadow-lg">
                 Donate Now
@@ -60,7 +60,7 @@ export function VolunteerSection() {
             </CardFooter>
           </Card>
 
-          <Card className="border-t-4 border-t-blue-600 transition-all hover:shadow-xl hover:-translate-y-1 duration-300 bg-white dark:bg-gray-800">
+          <Card className="border-t-4 border-t-blue-600 transition-all hover:shadow-xl hover:-translate-y-1 duration-300 bg-white dark:bg-gray-800 flex flex-col">
             <CardHeader className="pb-4">
               <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🤝</span>
@@ -68,7 +68,7 @@ export function VolunteerSection() {
               <CardTitle className="text-xl text-blue-700 dark:text-blue-400">Volunteer</CardTitle>
               <CardDescription className="text-base">Join our team of dedicated environmental warriors</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 flex-grow">
               <ul className="space-y-3">
                 <li className="flex items-start group">
                   <Check className="h-5 w-5 text-blue-600 mr-3 mt-0.5 group-hover:scale-110 transition-transform" />
@@ -88,7 +88,7 @@ export function VolunteerSection() {
                 </li>
               </ul>
             </CardContent>
-            <CardFooter className="pt-6">
+            <CardFooter className="pt-6 mt-auto">
               <a className="w-full" href="https://docs.google.com/forms/d/e/1FAIpQLSeS5b0Rzm0HviW2xJmBZIlLJIaczP7i2TrzYnuq_h8Lc5NDdA/viewform?usp=sharing&ouid=112549842481522030881">
               <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 transition-all hover:shadow-lg">
                 Register as Volunteer
@@ -97,7 +97,7 @@ export function VolunteerSection() {
             </CardFooter>
           </Card>
 
-          <Card className="border-t-4 border-t-amber-600 transition-all hover:shadow-xl hover:-translate-y-1 duration-300 bg-white dark:bg-gray-800">
+          <Card className="border-t-4 border-t-amber-600 transition-all hover:shadow-xl hover:-translate-y-1 duration-300 bg-white dark:bg-gray-800 flex flex-col">
             <CardHeader className="pb-4">
               <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">📢</span>
@@ -105,7 +105,7 @@ export function VolunteerSection() {
               <CardTitle className="text-xl text-amber-700 dark:text-amber-400">Spread the Word</CardTitle>
               <CardDescription className="text-base">Help us reach more hearts and minds</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 flex-grow">
               <ul className="space-y-3">
                 <li className="flex items-start group">
                   <Check className="h-5 w-5 text-amber-600 mr-3 mt-0.5 group-hover:scale-110 transition-transform" />
@@ -125,7 +125,7 @@ export function VolunteerSection() {
                 </li>
               </ul>
             </CardContent>
-            <CardFooter className="pt-6">
+            <CardFooter className="pt-6 mt-auto">
               <a href="https://www.instagram.com/ugf.in/?hl=en" className="text-gray-300 hover:text-green-500 w-full">
               <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 transition-all hover:shadow-lg">
                 Share Campaign

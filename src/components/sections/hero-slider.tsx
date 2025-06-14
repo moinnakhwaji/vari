@@ -3,26 +3,38 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { heroSlides } from "@/lib/constants";
+import video from "../../assets/video.mp4";
 
 export function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
+  const allSlides = [
+    {
+      id: 'video-slide',
+      type: 'video',
+      title: 'Presenting ! Utkarsh Environment Wari 2025',
+      subtitle: 'Together, Let us Make a Difference!',
+      source: video
+    },
+    ...heroSlides.map(slide => ({ ...slide, type: 'image' }))
+  ];
+
   const goToNextSlide = () => {
     if (isTransitioning) return;
     setIsTransitioning(true);
-    setCurrentSlide((prev) => (prev === heroSlides.length - 1 ? 0 : prev + 1));
+    setCurrentSlide((prev) => (prev === allSlides.length - 1 ? 0 : prev + 1));
     setTimeout(() => setIsTransitioning(false), 500);
   };
 
   const goToPrevSlide = () => {
     if (isTransitioning) return;
     setIsTransitioning(true);
-    setCurrentSlide((prev) => (prev === 0 ? heroSlides.length - 1 : prev - 1));
+    setCurrentSlide((prev) => (prev === 0 ? allSlides.length - 1 : prev - 1));
     setTimeout(() => setIsTransitioning(false), 500);
   };
 
-  const goToSlide = (index: number) => {
+  const goToSlide = (index:any) => {
     if (isTransitioning || index === currentSlide) return;
     setIsTransitioning(true);
     setCurrentSlide(index);
@@ -37,7 +49,7 @@ export function HeroSlider() {
   return (
     <section id="home" className="relative w-full h-[80vh] overflow-hidden">
       {/* Slides */}
-      {heroSlides.map((slide, index) => (
+      {allSlides.map((slide, index) => (
         <div
           key={slide.id}
           className={cn(
@@ -45,35 +57,52 @@ export function HeroSlider() {
             index === currentSlide ? "opacity-100" : "opacity-0"
           )}
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${slide.image})` }}
-          />
-          <div className="" />
-          
-          <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-orange-600 mb-4 animate-fadeIn">
-              {slide.title}
-            </h1>
-            <p className="text-lg md:text-xl text-black z-90 max-w-3xl animate-fadeIn animation-delay-100">
-              {slide.subtitle}
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fadeIn animation-delay-200">
-              {/* <Button 
-                size="lg" 
-                className="bg-green-600 hover:bg-green-700 text-white"
-              >
-                Donate Now
-              </Button> */}
-              {/* <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white  hover:bg-white/20 text-black"
-              >
-                Learn More
-              </Button> */}
+          {/* Video Slide */}
+          {slide.type === 'video' ? (
+            <div className="relative w-full h-full">
+              <video
+                className="absolute inset-0 w-full h-full object-cover"
+                     //@ts-ignore
+                src={slide?.source}
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+              {/* Stronger dark overlay for better text readability */}
+              <div className="absolute inset-0 bg-black/50 z-10" />
+              
+              {/* Text overlay with higher z-index */}
+              <div className="absolute inset-0 z-20 flex flex-col items-center justify-start pt-16 md:pt-20 lg:pt-40 text-center px-4 pb-4">
+                <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-orange-500 mb-4 animate-fadeIn drop-shadow-2xl shadow-black">
+                  {slide.title}
+                </h1>
+                <p className="text-lg md:text-xl text-white max-w-3xl animate-fadeIn animation-delay-100 drop-shadow-2xl shadow-black font-medium">
+                  {slide.subtitle}
+                </p>
+              </div>
             </div>
-          </div>
+          ) : (
+            /* Image Slide */
+            <div className="relative w-full h-full">
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                //@ts-ignore
+                style={{ backgroundImage: `url(${slide.image})` }}
+              />
+              <div className="absolute inset-0 bg-black/20 z-10" />
+              
+              {/* Text overlay for image slides */}
+              <div className="absolute inset-0 z-20 flex flex-col items-center justify-start pt-16 md:pt-20 lg:pt-40 text-center px-4 pb-4">
+                <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-orange-500 mb-4 animate-fadeIn drop-shadow-2xl shadow-black">
+                  {slide.title}
+                </h1>
+                <p className="text-lg md:text-xl text-white max-w-3xl animate-fadeIn animation-delay-100 drop-shadow-2xl shadow-black font-medium">
+                  {slide.subtitle}
+                </p>
+              </div>
+            </div>
+          )}
         </div>
       ))}
 
@@ -81,7 +110,7 @@ export function HeroSlider() {
       <Button
         variant="ghost"
         size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:bg-black/20 z-10"
+        className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:bg-black/20 z-30"
         onClick={goToPrevSlide}
       >
         <ChevronLeft className="h-8 w-8" />
@@ -90,15 +119,15 @@ export function HeroSlider() {
       <Button
         variant="ghost"
         size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:bg-black/20 z-10"
+        className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:bg-black/20 z-30"
         onClick={goToNextSlide}
       >
         <ChevronRight className="h-8 w-8" />
       </Button>
 
-      {/* Dots */}
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-2 z-10">
-        {heroSlides.map((_, index) => (
+      {/* Dots Navigation */}
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-2 z-30">
+        {allSlides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
