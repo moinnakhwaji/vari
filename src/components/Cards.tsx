@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { TreePine, Users, Award, MapPin } from 'lucide-react';
+import cardimage from "../assets/2card.jpg"
 
 const WariCard = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,7 +24,7 @@ const WariCard = () => {
   }, []);
 
   const stats = [
-    { icon: TreePine, number: "50K+", label: "Trees Planted", color: "text-green-600" },
+    { icon: TreePine, number: "10,000+", label: "Trees Planted", color: "text-green-600" },
     { icon: Users, number: "10K+", label: "Pilgrims Reached", color: "text-blue-600" },
     { icon: Award, number: "25+", label: "Awards Won", color: "text-purple-600" },
     { icon: MapPin, number: "200+", label: "Locations Cleaned", color: "text-orange-600" }
@@ -93,14 +94,16 @@ const WariCard = () => {
             <div 
               className="absolute inset-0 bg-cover bg-center"
               style={{ 
-                backgroundImage: "url('https://d1hjkbq40fs2x4.cloudfront.net/2020-06-19/files/15925466380.jpeg')" 
+                 backgroundImage: `url(${cardimage})`,
+    backgroundSize: "cover", // optional, for full coverage
+    backgroundPosition: "center", // optional, to center the image
               }}
             >
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-l from-transparent via-black/20 to-black/40"></div>
               
               {/* Wari Button - Positioned on Image */}
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute inset-0 flex items-end pb-2 justify-center">
                 <a 
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeS5b0Rzm0HviW2xJmBZIlLJIaczP7i2TrzYnuq_h8Lc5NDdA/viewform?usp=sharing&ouid=112549842481522030881"
                   target="_blank"
